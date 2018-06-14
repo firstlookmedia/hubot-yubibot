@@ -1,2 +1,2 @@
-# hubot-yubibot
-:key: yubikey hubot plugin
+
+## Yubibot, the Yubikey Hubot plugin

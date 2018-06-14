@@ -1,0 +1,12 @@
+{
+  "name": "hubot-yubibot",
+  "version": "0.0.1",
+  "private": true,
+  "description": "yubikey bot",
+  "devDependencies" : {
+    "dotenv": "^5.0.1"
+  },
+  "dependencies": {
+    "@slack/client": "^4.2.2"
+  }
+}
