@@ -34,13 +34,13 @@ module.exports = (robot) => {
 
   //
   robot.hear( /(^|\W)ccc\w{41}(\W|$)/i, (res) => {
-    robot.logger.info( `heard yubikey: channel: ${res.message.rawMessage.channel.id}` ) ;
+    robot.logger.info( `heard yubikey: channel: ${res.message.rawMessage.channel}` ) ;
 
     if ( is_slack )
     {
       web.reactions.add({
         name: YUBIBOT_REACTION_NAME,
-        channel: res.message.rawMessage.channel.id,
+        channel: res.message.rawMessage.channel,
         timestamp: res.message.rawMessage.ts
       })
       .catch( err => robot.logger.error( err ) )
