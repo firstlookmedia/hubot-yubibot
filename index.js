@@ -18,7 +18,7 @@ const YUBIBOT_REACTION_NAME = process.env.YUBIBOT_REACTION_NAME || 'key' ;
 
 module.exports = (robot) => {
 
-  robot.logger.info( `robot: ${robot}` ) ;
+  robot.logger.info( `yubibot: robot.adapterName: ${robot.adapterName}` ) ;
 
   const is_slack = ( robot.adapterName === 'slack' ) ;
 
